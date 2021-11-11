@@ -1,0 +1,11 @@
+node_modules
+log*/
+dist/
+.history
+upload/
+kw/
+csv/
+csv2/
+pdpfailure*/
+requirement
+pdpfailure_count.sh

@@ -1,0 +1,42 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "bcrypt": "*",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "crypto-js": "^3.1.9-1",
+    "csv-parser": "^2.3.3",
+    "csv-writer": "^1.6.0",
+    "debug": "~2.6.9",
+    "elastic-apm-node": "^3.23.0",
+    "elasticsearch": "^16.7.1",
+    "elliptic": "^6.5.2",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.6",
+    "express-form-data": "^2.0.11",
+    "express-session": "^1.17.1",
+    "filereader": "^0.10.3",
+    "formidable": "^1.2.2",
+    "gzipy": "0.0.2",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.2.1",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.31",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "node-cron": "^2.0.3",
+    "node-string-pad": "0.0.4",
+    "papaparse": "^5.2.0"
+  }
+}
