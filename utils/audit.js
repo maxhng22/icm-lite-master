@@ -43,12 +43,12 @@ function request(req, desc, operation_type, status) {
             let decodedToken = jwt.decode(token);
             accessconnection.query(`INSERT INTO system_audit_trail_tab(member_id,operation_type,operation_detail,status) VALUES ('${decodedToken.ID}','${operation_type}','${desc}','${status}')`, function (error, rows, field) {
                 if (error) throw error;
-        
-                
+
+
             });
-            
+
         } catch (error) {
-            
+
             return false;
         }
 
@@ -60,8 +60,24 @@ function request(req, desc, operation_type, status) {
     }
 }
 
+
+function requestWithoutToken(member_id, desc, operation_type, status) {
+    try {
+        accessconnection.query(`INSERT INTO system_audit_trail_tab(member_id,operation_type,operation_detail,status) VALUES ('${member_id}','${operation_type}','${desc}','${status}')`, function (error, rows, field) {
+            if (error) throw error;
+        });
+
+    } catch (error) {
+
+        return false;
+    }
+
+
+}
+
 module.exports = {
-    request
+    request,
+    requestWithoutToken
 }
 
 
